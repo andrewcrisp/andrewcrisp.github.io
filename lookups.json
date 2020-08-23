@@ -1,18 +1,18 @@
 {
-    "anima": [
+    "anima":
       { 
-            "sea life": [
-                "Mollusc",
-                "Crab, Lobster",
-                "Squid, Mudskipper",
-                "Fish, Deep Sea",
-                "Jellyfish, Octopus",
-                "Fish, Fresh Water",
-                "Whale, Dolphin",
-                "Shell",
-                "Eel, Leech",
-                "Coral, Anemone",
-                "Shark, Ray"
+        "sea life": [
+            "Mollusc",
+            "Crab, Lobster",
+            "Squid, Mudskipper",
+            "Fish, Deep Sea",
+            "Jellyfish, Octopus",
+            "Fish, Fresh Water",
+            "Whale, Dolphin",
+            "Shell",
+            "Eel, Leech",
+            "Coral, Anemone",
+            "Shark, Ray"
             ],
         "insect": [
           "Worm",
@@ -49,8 +49,7 @@
           "Tropical, Parrot, Heron",
           "Bird of prey, Hawk, Owl"
         ]
-        }
-    ],
+    },
     "veggie": [
       { 
         "Plant":[
