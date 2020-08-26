@@ -9,7 +9,8 @@ var techne
 $(function () {
     // Do stuff to the DOM
     
-    let requestURL = 'https://andrewcrisp.github.io/lookups.json';
+    //let requestURL = 'https://andrewcrisp.github.io/lookups.json';
+    let requestURL = 'lookups.json'
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -30,7 +31,7 @@ $(function () {
         }
 
         function roll_anima(){
-            var obj = anima
+            var obj = lookups["anima"]
             var families = Object.getOwnPropertyNames(obj)
             roll1 = get_random_number(families.length)
             family = obj[families[roll1]]
@@ -44,7 +45,7 @@ $(function () {
             document.getElementById("anima2_specific").innerHTML = family[roll1]
         }
         function roll_veggie(){
-            var obj = veggie
+            var obj = lookups["veggie"]
             var families = Object.getOwnPropertyNames(obj)
             roll1 = get_random_number(families.length)
             family = obj[families[roll1]]
@@ -58,7 +59,7 @@ $(function () {
             document.getElementById("veggie2_specific").innerHTML = family[roll1]
         }
         function roll_elemental(){
-            var obj = elemental
+            var obj = lookups["elemental_and_mineral"]
             var families = Object.getOwnPropertyNames(obj)
             roll1 = get_random_number(families.length)
             family = obj[families[roll1]]
@@ -72,7 +73,7 @@ $(function () {
             document.getElementById("elemental2_specific").innerHTML = family[roll1]
         }
         function roll_techne(){
-            var obj = techne
+            var obj = lookups["techne"]
             var families = Object.getOwnPropertyNames(obj)
             roll1 = get_random_number(families.length)
             family = obj[families[roll1]]
