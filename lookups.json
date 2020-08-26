@@ -50,7 +50,7 @@
           "Bird of prey, Hawk, Owl"
         ]
     },
-    "veggie": [
+    "veggie": 
       { 
         "Plant":[
           "Seaweed",
@@ -93,8 +93,8 @@
           "Palm"
         ]
       }
-    ],
-    "elemental_and_mineral": [
+    ,
+    "elemental_and_mineral": 
       { 
         "Fire and Electric": [
           "Fire, Vapor",
@@ -136,8 +136,8 @@
           "Cloud, Cyclone"
         ]
       }
-    ],
-    "techne": [
+    ,
+    "techne": 
       {
         "Transportation": [
           "Car, Truck, Bus",
@@ -200,5 +200,4 @@
           "Rocket"
         ]
       }
-    ]
   }
