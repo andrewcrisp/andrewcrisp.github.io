@@ -18,12 +18,12 @@ $(function () {
     request.onload = function() {
         const r = request.response;
         lookups = r
-        anima = lookups["anima"];
-        veggie = lookups["veggie"];
-        elemental = lookups["elemental_and_mineral"];
-        techne = lookups["techne"];
-        function get_random_number(max=10){
-            return Math.floor(Math.random() * max)
+        anima = lookups["Anima"];
+        veggie = lookups["Veggie"];
+        elemental = lookups["Elemental_and_mineral"];
+        techne = lookups["Techne"];
+        function get_random_number(min = 1, max=10){
+            return Math.floor(Math.random() * (max - min) + min);
         }
         function get_random_entry(obj){
             arr = Object.getOwnPropertyNames(obj)
@@ -31,58 +31,58 @@ $(function () {
         }
 
         function roll_anima(){
-            var obj = lookups["anima"]
+            var obj = lookups["Anima"]
             var families = Object.getOwnPropertyNames(obj)
-            roll1 = get_random_number(families.length)
+            roll1 = get_random_number(1, families.length-1)
             family = obj[families[roll1]]
-            roll2 = get_random_number(family.length)
+            roll2 = get_random_number(1, family.length-1)
             document.getElementById("anima1_family").innerHTML = families[roll1]
             document.getElementById("anima1_specific").innerHTML = family[roll1]
-            roll1 = get_random_number(families.length)
+            roll1 = get_random_number(1, families.length-1)
             family = obj[families[roll1]]
-            roll2 = get_random_number(family.length)
+            roll2 = get_random_number(1, family.length-1)
             document.getElementById("anima2_family").innerHTML = families[roll1]
             document.getElementById("anima2_specific").innerHTML = family[roll1]
         }
         function roll_veggie(){
-            var obj = lookups["veggie"]
+            var obj = lookups["Veggie"]
             var families = Object.getOwnPropertyNames(obj)
-            roll1 = get_random_number(families.length)
+            roll1 = get_random_number(1, families.length-1)
             family = obj[families[roll1]]
-            roll2 = get_random_number(family.length)
+            roll2 = get_random_number(1, family.length-1)
             document.getElementById("veggie1_family").innerHTML = families[roll1]
             document.getElementById("veggie1_specific").innerHTML = family[roll1]
-            roll1 = get_random_number(families.length)
+            roll1 = get_random_number(1, families.length-1)
             family = obj[families[roll1]]
-            roll2 = get_random_number(family.length)
+            roll2 = get_random_number(1, family.length-1)
             document.getElementById("veggie2_family").innerHTML = families[roll1]
             document.getElementById("veggie2_specific").innerHTML = family[roll1]
         }
         function roll_elemental(){
-            var obj = lookups["elemental_and_mineral"]
+            var obj = lookups["Elemental_and_mineral"]
             var families = Object.getOwnPropertyNames(obj)
-            roll1 = get_random_number(families.length)
+            roll1 = get_random_number(1, families.length-1)
             family = obj[families[roll1]]
-            roll2 = get_random_number(family.length)
+            roll2 = get_random_number(1, family.length-1)
             document.getElementById("elemental1_family").innerHTML = families[roll1]
             document.getElementById("elemental1_specific").innerHTML = family[roll1]
-            roll1 = get_random_number(families.length)
+            roll1 = get_random_number(1, families.length-1)
             family = obj[families[roll1]]
-            roll2 = get_random_number(family.length)
+            roll2 = get_random_number(1, family.length-1)
             document.getElementById("elemental2_family").innerHTML = families[roll1]
             document.getElementById("elemental2_specific").innerHTML = family[roll1]
         }
         function roll_techne(){
-            var obj = lookups["techne"]
+            var obj = lookups["Techne"]
             var families = Object.getOwnPropertyNames(obj)
-            roll1 = get_random_number(families.length)
+            roll1 = get_random_number(1, families.length-1)
             family = obj[families[roll1]]
-            roll2 = get_random_number(family.length)
+            roll2 = get_random_number(1, family.length-1)
             document.getElementById("techne1_family").innerHTML = families[roll1]
             document.getElementById("techne1_specific").innerHTML = family[roll1]
-            roll1 = get_random_number(families.length)
+            roll1 = get_random_number(1, families.length-1)
             family = obj[families[roll1]]
-            roll2 = get_random_number(family.length)
+            roll2 = get_random_number(1, family.length-1)
             document.getElementById("techne2_family").innerHTML = families[roll1]
             document.getElementById("techne2_specific").innerHTML = family[roll1]
         }
@@ -100,10 +100,10 @@ $(function () {
             roll_veggie()
             roll_elemental()
             roll_techne()
-            roll1 = get_random_number(8)
-            roll2 = get_random_number(8)
+            roll1 = get_random_number(1,8)
+            roll2 = get_random_number(1,8)
             while (roll1 == roll2){
-                roll2 = get_random_number(8)
+                roll2 = get_random_number(1,8)
             }
             if (roll1 == 1 || roll2 == 1){
                 document.getElementById("s1").innerHTML = "SELECTED"
