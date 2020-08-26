@@ -9,8 +9,8 @@ var techne
 $(function () {
     // Do stuff to the DOM
     
-    //let requestURL = 'https://andrewcrisp.github.io/lookups.json';
-    let requestURL = 'lookups.json'
+    let requestURL = 'https://andrewcrisp.github.io/lookups.json';
+    //let requestURL = 'lookups.json'
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
