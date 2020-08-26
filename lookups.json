@@ -1,7 +1,7 @@
-{
-    "anima":
+lookups = {
+    "Anima":
       { 
-        "sea life": [
+        "Sea life": [
             "Mollusc",
             "Crab, Lobster",
             "Squid, Mudskipper",
@@ -14,7 +14,7 @@
             "Coral, Anemone",
             "Shark, Ray"
             ],
-        "insect": [
+        "Insect": [
           "Worm",
           "Ant",
           "Mosquito",
@@ -27,7 +27,7 @@
           "Flea, Mite",
           "Spider"
         ],
-        "mammal": [
+        "Mammal": [
           "Sheep, Cow",
           "Mouse, Rabbit",
           "Pig, Boar",
@@ -35,13 +35,13 @@
           "Ram, Bull, Buck",
           "Elephant, Giraffe"
         ],
-        "reptile": [
+        "Reptile": [
           "Crocodile, Gila",
           "Frog, Newt",
           "Lizard, Snake",
           "Turtle"
         ],
-        "bird": [
+        "Bird": [
           "Wild Fowl, Duck",
           "Farm Fowl, Rooster",
           "Seabird, Penguin",
@@ -50,7 +50,7 @@
           "Bird of prey, Hawk, Owl"
         ]
     },
-    "veggie": 
+    "Veggie": 
       { 
         "Plant":[
           "Seaweed",
@@ -94,7 +94,7 @@
         ]
       }
     ,
-    "elemental_and_mineral": 
+    "Elemental_and_mineral": 
       { 
         "Fire and Electric": [
           "Fire, Vapor",
@@ -137,7 +137,7 @@
         ]
       }
     ,
-    "techne": 
+    "Techne": 
       {
         "Transportation": [
           "Car, Truck, Bus",
