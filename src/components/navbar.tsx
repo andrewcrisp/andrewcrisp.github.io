@@ -19,16 +19,15 @@ function Navbar() {
     // { icon: ChartTreemap, label: "Portfolio", route: "portfolio" },
   ];
   const pathname = usePathname();
-  const isActive = (path: Url) => pathname === path;
   return (
     <Drawer>
-      <div className="flex flex-row w-full px- justify-end bg-transparent">
-        <Button variant="secondary">
+      <div className="flex flex-row w-full justify-end">
+        <Button variant="secondary" className="">
           <Bars />
           Menu
         </Button>
       </div>
-      <Drawer.Backdrop>
+      <Drawer.Backdrop className="dark">
         <Drawer.Content placement="right">
           <Drawer.Dialog>
             <Drawer.CloseTrigger />
