@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <Drawer>
       <div className="flex flex-row w-full justify-end">
-        <Button variant="secondary" className="">
+        <Button variant="secondary">
           <Bars />
           Menu
         </Button>
