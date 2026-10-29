@@ -285,7 +285,7 @@ export const jobs: JobEntry[] = [
   },
   {
     index: 3,
-    title: "Domain Architect II ",
+    title: "Domain Architect II",
     employer: "St Luke’s Health System",
     location: "Boise, ID",
     startdate: new Date("04/1/2019"),
@@ -584,7 +584,7 @@ export const jobs: JobEntry[] = [
   },
   {
     index: 1,
-    title: "Desktop Technician I/II ",
+    title: "Desktop Technician I/II",
     employer: "Flextechs, LLC/St Luke’s Health System",
     location: "Boise, ID",
     startdate: new Date("1/1/2012"),

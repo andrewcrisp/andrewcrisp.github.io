@@ -1,6 +1,5 @@
 import { JobEntry } from "@/src/data/resume_entries";
 import { Card, Separator } from "@heroui/react";
-import "./jobs.css";
 
 export default function Job({ jobEntry }: { jobEntry: JobEntry }) {
   return (
