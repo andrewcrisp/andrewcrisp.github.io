@@ -14,7 +14,7 @@ export default function Education({
           return (
             <div className="flex flex-col text-sm py-1 px-3.5" key={e.index}>
               {e.index !== 0 && <Separator />}
-              <span>{e.school}</span>
+              <span className="font-bold">{e.school}</span>
               <span>
                 {e.level}
                 {e.areaOfFocus.length > 0 ? ":" : ""} {e.areaOfFocus}
