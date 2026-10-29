@@ -1,51 +1,25 @@
-import {
-  ArrowUpRightFromSquare,
-  Envelope,
-  LogoGithub,
-  LogoLinkedin,
-} from "@gravity-ui/icons";
-import { Link } from "@heroui/react";
+import { ContactEntry } from "@/src/data/contact_entries";
+import { ArrowUpRightFromSquare } from "@gravity-ui/icons";
+import Link from "next/link";
 
-export default function ContactBlock() {
+export default function ContactBlock({ contact }: { contact: ContactEntry }) {
   return (
-    <div>
-      <div>
-        <span className="text-2xl px-3">Andrew Crisp</span>
-        <span>
-          <button
-            key="email"
-            className="flex items-center gap-3 rounded-xl px-3 py-0.5 text-sm text-foreground transition-colors hover:bg-default"
-            type="button"
-          >
-            <Link href="mailto:andrew.crisp@gmail.com">
-              <Envelope className="size-5 text-muted" />
-              andrew.crisp@gmail.com
-            </Link>
-          </button>
-          <button
-            key="linkedin"
-            className="flex items-center gap-3 rounded-xl px-3 py-0.5 text-sm text-foreground transition-colors hover:bg-default"
-            type="button"
-          >
-            <Link href="https://www.linkedin.com/in/andrew-crisp-b619438/">
-              <LogoLinkedin className="size-5 text-muted" />
-              https://www.linkedin.com/in/andrew-crisp-b619438/
-              <ArrowUpRightFromSquare className="size-3 text-muted" />
-            </Link>
-          </button>
-          <button
-            key="github"
-            className="flex items-center gap-3 rounded-xl px-3 py-0.5 text-sm text-foreground transition-colors hover:bg-default"
-            type="button"
-          >
-            <Link href="https://github.com/andrewcrisp">
-              <LogoGithub className="size-5 text-muted" />
-              https://github.com/andrewcrisp
-              <ArrowUpRightFromSquare className="size-3 text-muted" />
-            </Link>
-          </button>
+    <button
+      key={contact.index}
+      className="flex items-center gap-3 rounded-xl px-3 py-0.5 text-sm text-foreground transition-colors hover:bg-default"
+      type="button"
+    >
+      <Link href={contact.destination}>
+        <span className="flex flex-row">
+          {contact.icon}
+          <span>{contact.label}</span>
+          {contact.isLinkOut ? (
+            <ArrowUpRightFromSquare className="size-3 text-muted" />
+          ) : (
+            <></>
+          )}
         </span>
-      </div>
-    </div>
+      </Link>
+    </button>
   );
 }
