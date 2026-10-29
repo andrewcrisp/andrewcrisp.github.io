@@ -4,8 +4,7 @@ import "./jobs.css";
 
 export default function Job({ jobEntry }: { jobEntry: JobEntry }) {
   return (
-    <div>
-      <Separator />
+    <div className="flex flex-col gap-1">
       <Card variant="secondary">
         <p className="font-bold">Responsibilities</p>
         <ul>
@@ -18,6 +17,7 @@ export default function Job({ jobEntry }: { jobEntry: JobEntry }) {
           })}
         </ul>
       </Card>
+
       <Card variant="secondary">
         <p className="font-bold">Accomplishments</p>
         <ul>
