@@ -1,0 +1,21 @@
+/* li {
+  list-style-type: square;
+  list-style-position: inside;
+  text-indent: 2em hanging;
+  padding-bottom: 2;
+} */
+
+.jobResponsibility {
+  list-style-type: square;
+  list-style-position: inside;
+  text-indent: 2em hanging;
+  padding-bottom: 2;
+    
+}
+
+.jobAccomplishment {
+  list-style-type: square;
+  list-style-position: inside;
+  text-indent: 2em hanging;
+  padding-bottom: 2;
+}
