@@ -6,11 +6,8 @@ export default function Job({ jobEntry }: { jobEntry: JobEntry }) {
   return (
     <div>
       <Separator />
-      <h3 className="font-bold">{jobEntry.employer}</h3>
-      <h4>Title: {jobEntry.title}</h4>
-      <h5>Location: {jobEntry.location}</h5>
       <Card variant="secondary">
-        <p>Responsibilities</p>
+        <p className="font-bold">Responsibilities</p>
         <ul>
           {jobEntry.responsibilities.map((r) => {
             return (
@@ -22,7 +19,7 @@ export default function Job({ jobEntry }: { jobEntry: JobEntry }) {
         </ul>
       </Card>
       <Card variant="secondary">
-        <p>Accomplishments</p>
+        <p className="font-bold">Accomplishments</p>
         <ul>
           {jobEntry.accomplishments &&
             jobEntry.accomplishments!.sort().map((a) => {
