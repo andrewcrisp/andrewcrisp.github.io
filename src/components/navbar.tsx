@@ -15,7 +15,7 @@ function Navbar() {
     route: string;
   }[] = [
     { icon: House, label: "Home", route: "/" },
-    // { icon: Briefcase, label: "Résumé", route: "resume" },
+    { icon: Briefcase, label: "Résumé", route: "resume" },
     // { icon: ChartTreemap, label: "Portfolio", route: "portfolio" },
   ];
   const pathname = usePathname();
