@@ -24,7 +24,7 @@ export const educationEntries: EducationEntry[] = [
   {
     index: 2,
     school: "Coursera",
-    level: "Certificate",
+    level: "Certificate of Completion",
     areaOfFocus: "Data Science Specialization",
     endYear: 2016,
   },
