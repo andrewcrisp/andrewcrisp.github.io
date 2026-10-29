@@ -1,5 +1,5 @@
 "use client";
-import { Bars, House, ChartTreemap, Briefcase } from "@gravity-ui/icons";
+import { Bars, House, ChartTreemap, Briefcase, LogoGithub } from "@gravity-ui/icons";
 import { Drawer, Link } from "@heroui/react";
 
 import { Button } from "@heroui/react";
@@ -16,6 +16,7 @@ function Navbar() {
   }[] = [
     { icon: House, label: "Home", route: "/" },
     { icon: Briefcase, label: "Résumé", route: "resume" },
+    { icon: LogoGithub, label: "Github", route: "https://github.com/andrewcrisp" },
     // { icon: ChartTreemap, label: "Portfolio", route: "portfolio" },
   ];
   const pathname = usePathname();
