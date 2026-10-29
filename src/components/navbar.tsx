@@ -1,5 +1,11 @@
 "use client";
-import { Bars, House, ChartTreemap, Briefcase, LogoGithub } from "@gravity-ui/icons";
+import {
+  Bars,
+  House,
+  ChartTreemap,
+  Briefcase,
+  LogoGithub,
+} from "@gravity-ui/icons";
 import { Drawer, Link } from "@heroui/react";
 
 import { Button } from "@heroui/react";
@@ -15,8 +21,12 @@ function Navbar() {
     route: string;
   }[] = [
     { icon: House, label: "Home", route: "/" },
-    { icon: Briefcase, label: "Résumé", route: "resume" },
-    { icon: LogoGithub, label: "Github", route: "https://github.com/andrewcrisp" },
+    { icon: Briefcase, label: "Résumé", route: "/resume" },
+    {
+      icon: LogoGithub,
+      label: "Github",
+      route: "https://github.com/andrewcrisp",
+    },
     // { icon: ChartTreemap, label: "Portfolio", route: "portfolio" },
   ];
   const pathname = usePathname();
@@ -39,7 +49,11 @@ function Navbar() {
               <Drawer.Body>
                 <nav className="flex flex-col gap-1">
                   {navItems.map((item) => (
-                    <button key={item.label} className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-default" type="button">
+                    <button
+                      key={item.label}
+                      className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-default"
+                      type="button"
+                    >
                       <item.icon className="size-5 text-muted" />
                       <Link href={item.route}>{item.label}</Link>
                     </button>
