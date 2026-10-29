@@ -10,7 +10,7 @@ import Certificates from "./components/certificates";
 import { CertificateEntries } from "@/src/data/certificate_entries";
 function Resume() {
   return (
-    <main className="flex flex-col flex-1 w-full max-w-3xl items-center justify-between py-8 px-8 bg-white dark:bg-black dark:text-white sm:items-start">
+    <main className="flex flex-col flex-1 w-full max-w-3xl items-center justify-between py-8 px-8 bg-white sm:items-start">
       <Contact />
       <Experience jobs={jobs} />
       <Education educationEntries={educationEntries} />
