@@ -5,10 +5,10 @@ import { ChevronDown } from "@gravity-ui/icons";
 
 export default function Experience({ jobs }: { jobs: JobEntry[] }) {
   return (
-    <div>
+    <div className="min-w-full">
       <h2>Experience</h2>
       <Separator />
-      <Accordion allowsMultipleExpanded className="w-full">
+      <Accordion allowsMultipleExpanded className="w-full max-w-2xl flex flex-col">
         {jobs.sort().map((j) => (
           <Accordion.Item key={j.index}>
             <Accordion.Heading>

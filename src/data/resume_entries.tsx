@@ -20,7 +20,7 @@ export const jobs: JobEntry[] = [
   {
     index: 5,
     title: "Senior Developer, Operations",
-    employer: "allsynx/Businessolver 05/2023-Present",
+    employer: "allsynx/Businessolver",
     location: "Richardson, TX",
     startdate: new Date("5/1/2023"),
     enddate: undefined,
@@ -92,7 +92,7 @@ export const jobs: JobEntry[] = [
   {
     index: 4,
     title: "Data Scientist I",
-    employer: "St Luke’s Health System 06/2021-04/2023",
+    employer: "St Luke’s Health System",
     location: "Boise, ID",
     startdate: new Date("6/1/2021"),
     enddate: new Date("4/1/2023"),
@@ -176,7 +176,7 @@ export const jobs: JobEntry[] = [
   {
     index: 3,
     title: "Domain Architect II ",
-    employer: "St Luke’s Health System 04/2019-06/2021",
+    employer: "St Luke’s Health System",
     location: "Boise, ID",
     startdate: new Date("04/1/2019"),
     enddate: new Date("6/1/2021"),
@@ -283,8 +283,8 @@ export const jobs: JobEntry[] = [
   },
   {
     index: 2,
-    title: "Infrastructure Analyst ",
-    employer: "St Luke’s Health System 09/2015-04/201",
+    title: "Infrastructure Analyst",
+    employer: "St Luke’s Health System",
     location: "Boise, ID",
     startdate: new Date("9/1/2015"),
     enddate: new Date("4/1/2019"),
@@ -377,7 +377,7 @@ export const jobs: JobEntry[] = [
   {
     index: 1,
     title: "Desktop Technician I/II ",
-    employer: "Flextechs, LLC/St Luke’s Health System 01/2012-09/2015",
+    employer: "Flextechs, LLC/St Luke’s Health System",
     location: "Boise, ID",
     startdate: new Date("1/1/2012"),
     enddate: new Date("9/1/2015"),
@@ -428,8 +428,8 @@ export const jobs: JobEntry[] = [
   },
   {
     index: 0,
-    title: "Information Systems Lead ",
-    employer: "US Army 09/2003-06/2009",
+    title: "Information Systems Lead",
+    employer: "US Army",
     location: "US Based",
     startdate: new Date("9/1/2003"),
     enddate: new Date("6/1/2009"),
